@@ -37,7 +37,7 @@ response.sendRedirect("index.jsp?error=Belom Login");
         <div id="profile-header">  
             <h1>User <% out.println(" "+ request.getAttribute("tUsername") + " "); // ceritanya mau ngambil nama user yang diklik%></h1>
         </div>
-        <div id="edit_pro">
+        <div id="profile-biodata">
             <h4> Username 	:<% /*(String)session.getAttribute("sUsername"); */out.println(" "+ request.getAttribute("username") + " "); %>	</h4>
             <h4> Nama Lengkap 	:<% /*(String)session.getAttribute("sFullName");*/ out.println(" "+ request.getAttribute("nama_lengkap") + " "); %>	</h4>
             <h4> Tanggal lahir 	:<% /*(String)session.getAttribute("sBirth");*/ out.println(" "+ request.getAttribute("tanggal_lahir") + " "); %>	</h4>
@@ -59,6 +59,9 @@ response.sendRedirect("index.jsp?error=Belom Login");
             } catch (Exception e) {
                 e.printStackTrace(); } 
           --%>
-    
+           <div id="profile-tugas">
+              <h2 id="profile-title"> Tugas </h2>
+              <p> ini Task user yang dilihat </p>
+          </div>
     </body>
 </html>

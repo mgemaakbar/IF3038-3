@@ -13,7 +13,7 @@
 <%@ page import="org.apache.commons.fileupload.servlet.ServletFileUpload"%>
 <%@ page import="org.apache.commons.fileupload.disk.DiskFileItemFactory"%>
 <%@ page import="org.apache.commons.fileupload.*"%>
-<%--@include file="doLogin.jsp"--%>
+
 <%
 String error=request.getParameter("error");
 if(error==null || error=="null"){
@@ -37,14 +37,14 @@ response.sendRedirect("index.jsp?error=Belom Login");
     </head>
     <body>
         <div id="profile-header">  
-                <h1 id="profile-title"> Profile </h1>
+                <h1 id="profile-title"> Profil </h1>
         </div>
-            <div id="profile-biodata">
-                <img id="profile-img" src="HTML5_Logo_512.png" width="150" height="150">
-                <h4> Username 	:<% /*(String)session.getAttribute("sUsername"); */out.println(" "+ request.getAttribute("username") + " "); %>	</h4>
-                <h4> Nama Lengkap 	:<% /*(String)session.getAttribute("sFullName");*/ out.println(" "+ request.getAttribute("nama_lengkap") + " "); %>	</h4>
-                <h4> Tanggal lahir 	:<% /*(String)session.getAttribute("sBirth");*/ out.println(" "+ request.getAttribute("tanggal_lahir") + " "); %>	</h4>
-                <h4> Email 		:<% /*(String)session.getAttribute("sEmail");*/ out.println(" "+ request.getAttribute("email") + " "); %>	</h4>
+            <div id="edit_pro">
+                <img src="avatar/<% out.println(session.getAttribute("sAvatar"));%>" width="100" height="150"/>
+                <h4> Username 	:<% /*(String)session.getAttribute("sUsername"); */ out.println(session.getAttribute("sUsername"));%>	</h4>
+                <h4> Nama Lengkap 	:<% /*(String)session.getAttribute("sFullName");*/ out.println(session.getAttribute("sNama")); %>	</h4>
+                <h4> Tanggal lahir 	:<% /*(String)session.getAttribute("sBirth");*/ out.println(session.getAttribute("sBirth")); %>	</h4>
+                <h4> Email 		:<% /*(String)session.getAttribute("sEmail");*/ out.println(session.getAttribute("sEmail")); %>	</h4>
                 <a href="editprofil.jsp"> <input type="submit" value="Edit"></a>
 
             </div>   
@@ -65,10 +65,6 @@ response.sendRedirect("index.jsp?error=Belom Login");
             } catch (Exception e) {
                 e.printStackTrace(); } 
           --%>
-        
-            <div id="profile-tugas">
-                    <h1> Tugas </h1>
-                    <p> bla bla bla---yang ini belom <p>
-            </div>
+         
     </body>
 </html

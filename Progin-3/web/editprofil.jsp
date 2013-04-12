@@ -54,6 +54,7 @@ response.sendRedirect("index.jsp?error=Belom Login");
                
             <input name="btnsubmit" type="submit" value="Save" /> 
             <div id="submitWarning" class="warningMsg"></div>
+            <% response.sendRedirect("updateprofil.jsp?error=profil berhasil diganti"); %>
             
          </form>
 	</div>   

@@ -15,11 +15,12 @@
 	-o-border-radius : 5px;
     border-style: dashed;
 	margin: 10px 0px;
+        border-color: #902364
 }
 
 #profile-tugas{
-	width:600px; 
-	height:550px; 
+	width:64%; 
+	height:100%; 
 	float:right;
 	border : 1px solid #ccc;
 	border-radius : 5px;
@@ -28,11 +29,12 @@
 	-o-border-radius : 5px;
     border-style: dashed;
 	padding: 0px 25px;
+        border-color: #902364
 }
 
 #profile-biodata{
-	width:250px; 
-	height:500px;
+	width:25%; 
+	height:100%;
 	float:left;
 	border : 1px solid #ccc;
 	border-radius : 5px;
@@ -41,7 +43,8 @@
 	-o-border-radius : 5px;
     border-style: dashed;
 	margin-right:10px;
-	padding : 25px;
+	padding-left : 4%;
+        border-color: #902364
 
 }
 
@@ -54,3 +57,5 @@ h1{color:black; font-family: "cambria";}
 #profile-img{
 	
 }
+
+#edit_pro{padding-left:4% ; margin:0%; width: 90%; border:1px; border-radius:5px; border-style:dashed; border-color: #902364}

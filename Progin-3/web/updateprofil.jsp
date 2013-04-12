@@ -12,6 +12,7 @@
 <%@ page import="org.apache.commons.fileupload.disk.DiskFileItemFactory"%>
 <%@ page import="org.apache.commons.fileupload.*"%>
 <%@ page language="java" import="helper.MyDatabase,java.sql.ResultSet;" errorPage="" %>
+
 <%
 // String username=request.getParameter("username");
  String birth=request.getParameter("avatar");    
@@ -61,7 +62,7 @@
              if(res!=-1) {
                   response.sendRedirect("mainpage.jsp?");
              } else {
-                 response.sendRedirect("index.jsp?error=Edit Profil Error");
+                 response.sendRedirect("profil.jsp?error=Edit Profil Error");
              }
          } catch (Exception e) {
                  e.printStackTrace();

@@ -8,14 +8,13 @@
     String tQuery = "SELECT * FROM user1 WHERE username='"+username+"' AND password='"+password+"';";
     try{
    
-  
     ResultSet tResult = MyDatabase.getSingleton().selectDB(tQuery);
   
     if(tResult.next())
     {
       session.setAttribute("sUsername",tResult.getString("username"));
       session.setAttribute("sAvatar",tResult.getString("avatar"));
-      session.setAttribute("sFullName",tResult.getString("nama_lengkap"));
+      session.setAttribute("sNama",tResult.getString("nama_lengkap"));
       response.sendRedirect("mainpage.jsp");
     }
     else
