@@ -1,0 +1,54 @@
+body{background:white center top no-repeat;
+	font:90% 'Maven Pro', Cambria,sans-serif;
+	padding:15px;
+	background-position: absolute;
+	background-color: #FAF4E6}
+
+header{margin:50 50 10px;
+	text-align:center;}
+
+#logincontent{float: center; 
+margin-left: 20%; margin-right: 20%; margin-top:10%;
+}
+
+#tes{
+	width:100%;
+	height:150px;
+	border-radius: 0px;
+}
+
+#formlogin{ padding-left:10%; margin:0%; width: 90%; border:50px; border:1px dashed; border-color: #902364;}
+
+#formregister{padding-left:10% ; margin:0%; width: 90%; border:50px; border:1px dashed; border-color: #902364;}
+
+#ttab{float:left; font-weight:bold; padding:7%; margin-left:15%;}
+
+#sbox{float:right; margin-right: 19%; padding-top:6.4%;}
+
+#isi{float: left; margin-left:12%; padding-left:10%;}
+
+/* H1-H6 */
+h1,h2,h3,h4,h5,h6{font-weight:400;color:#902364;letter-spacing:-.5px;line-height:1em;margin:0 0 5px;padding:0;text-shadow:#FAF4E6 1px 1px 2px;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{font-weight:400;}
+h1{font-size:2.0em;}
+h2{font-size:1.8em;}
+h3{font-size:1.6em;}
+h4{font-size:1.4em;}
+
+/* Footer */
+#colophon{clear:both;display:block;padding:2em 0 0;width:100%;text-align:center;}
+#colophon p{margin-left:20%;margin-right:20%;padding:0%;color:#777;padding-top:1em;border-top:2px dotted #902364;}
+#colophon a{font-weight:400;color:#902364;}
+#colophon span{font-size:0.5em;}
+
+
+/* Header */
+#logo {position: center;
+border : 1px solid #902364;
+border-style: dashed;
+border-color: #902364;
+margin-left:18%;margin-right:18%;}
+
+.warningMsg {
+    color: red;
+}
