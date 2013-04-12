@@ -24,11 +24,11 @@
 		</div>
 	</header>
         <div id="ttab">
-				<a href="dashboard.jsp?kategori=%" target="bawah">Dashboard</a> &emsp;&emsp;
-				<a href="detailtugas.jsp" target="bawah">Rincian Tugas</a>&emsp;&emsp;
-				<a href="tambah_tugas.jsp" target="bawah">Tambah Tugas</a>&emsp;&emsp;
-				<a href="profil.jsp" target="bawah">Profil</a>&emsp;&emsp;
-				<a href="logout.jsp" target="_parent">Logout</a>
+				<a href="dashboard.php?kategori=%" target="bawah">Dashboard</a> &emsp;&emsp;
+				<a href="detailtugas.php" target="bawah">Rincian Tugas</a>&emsp;&emsp;
+				<a href="tambah_tugas.php" target="bawah">Tambah Tugas</a>&emsp;&emsp;
+				<a href="profile.php?username=username1" target="bawah">Profil</a>&emsp;&emsp;
+				<a href="logout.php" target="_parent">Logout</a>
 		</div>
 		<div id="sbox">
 			<form name="searchform"  action="search.php" target="bawah" method="POST" >
